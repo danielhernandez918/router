@@ -2,13 +2,13 @@ import React from 'react'
 import {useParams} from "react-router"
 
 const Keyword = () => {
-    const{keyword} =useParams()
+    const{keyword, textColor} =useParams()
 
 
     return (
-        <fieldset>
-            <h1>You search for {keyword}</h1>
-        </fieldset>
+        <div>
+            <h1 style={{color:textColor}}>You search for {keyword}</h1>
+        </div>
     )
 }
 

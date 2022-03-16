@@ -39,7 +39,7 @@ function App() {
           <Home />
         </Route>
         {/* question mark makes it optional */}
-        <Route path="/search/:keyword">
+        <Route path="/search/:keyword/:textColor?">
           <Keyword />
         </Route>
       </Switch>
